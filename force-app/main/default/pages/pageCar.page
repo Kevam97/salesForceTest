@@ -1,0 +1,16 @@
+<apex:page controller="controllerVisualForce">
+    <apex:form >
+        <apex:pageBlock title="Car List" id="car_list">
+            <apex:pageBlockTable value="{! info }" var="c">
+                <apex:column value="{! c.Price__c }"/>
+                <apex:column value="{! c.Tax__c }"/>
+                <apex:column value="{! c.Registration_Plate__c }"/>
+                <apex:column value="{! c.Full_Name__c }"/>
+                <apex:column value="{! c.Full_Price__c }"/>
+                <apex:column value="{! c.Down_Payment__c }"/>
+                <apex:column value="{! c.Leasing__c }"/>
+                <apex:column value="{! c.Lead__c }"/>
+            </apex:pageBlockTable>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
